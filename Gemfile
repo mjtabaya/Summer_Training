@@ -6,14 +6,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
-gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'duktape'
 gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
+gem 'duktape'
 gem 'jbuilder', '~> 2.5'
+gem 'puma', '~> 3.11'
+gem 'rails', '~> 5.2.3'
+gem 'sass-rails', '~> 5.0'
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
 # added gems
 gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
@@ -36,10 +36,10 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :production do
@@ -49,13 +49,13 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'minitest'
+  gem 'minitest-reporters'
   gem 'rails-controller-testing'
-  gems 'minitest'
-  gems 'minitest-reporters'
-  gems 'guard'
-  gems 'guard-minitest'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
