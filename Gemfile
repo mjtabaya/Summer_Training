@@ -47,12 +47,12 @@ group :production do
 end
 
 group :test do
-  gem 'selenium-webdriver'
   gem 'guard'
   gem 'guard-minitest'
   gem 'minitest'
   gem 'minitest-reporters'
   gem 'rails-controller-testing'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
