@@ -47,7 +47,7 @@ group :production do
 end
 
 group :test do
-  gem 'capybara', '>= 3.18.0'
+  gem 'selenium-webdriver'
   gem 'guard'
   gem 'guard-minitest'
   gem 'minitest'
