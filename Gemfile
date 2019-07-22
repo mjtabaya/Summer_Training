@@ -15,7 +15,6 @@ gem 'rails', '~> 5.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
-gem 'win32console'
 # added gems
 # gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
@@ -35,6 +34,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'sqlite3'
+  gem 'win32console'
 end
 
 group :development do
